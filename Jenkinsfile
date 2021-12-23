@@ -2,7 +2,7 @@ pipeline {
   agent {
     kubernetes {
       // this label will be the prefix of the generated pod's name
-//      label 'worker'
+      label 'jenkins/'
       yaml """
 apiVersion: v1
 kind: Pod
