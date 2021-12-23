@@ -7,7 +7,7 @@ pipeline {
 apiVersion: v1
 kind: Pod
 metadata:
-  labels:
+  inheritFrom:
     component: ci
 spec:
   containers:
